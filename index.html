@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Toolbox</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+  <div class="cont" style="width: 670px;">
+
+    <h3 class="title">Hex <-> Dec converter</h3>
+    <input type="text" id="decimalInput" name="decimalInput" minlength="1" maxlength="70" size="70" value="Number Input value (1 to 70 chars)">
+    <input type="text" id="hexaInput" name="hexaInput" minlength="1" maxlength="70" size="70" value="Hex Input value (1 to 70 chars)">
+    <button id="click_me">Convert</button>
+    <p id="output">Input value to convert and press convert...</p>
+
+    <hr>
+
+    <h3 class="title">Etherscan search</h3>
+    <input type="text" id="etherScanInput" name="etherScanInput" required minlength="1" maxlength="70" size="70" value="Search by Address / Txn Hash / Block / Token / Ens">
+    <div>
+      <!-- <input type="radio" id="Address" name="Address" value="Address" data-group='type-of-search'>
+      <label for="Address">Address</label>
+      <input type="radio" id="Tx" name="Tx" value="Tx" data-group='type-of-search'>
+      <label for="Tx">Tx</label>
+      <input type="radio" id="Block" name="Block" value="Block" data-group='type-of-search'>
+      <label for="Block">Block</label>
+      <input type="radio" id="Token" name="Token" value="Token" data-group='type-of-search'>
+      <label for="Token">Token</label>
+      <input type="radio" id="Ens" name="Ens" value="Ens" data-group='type-of-search'>
+      <label for="Ens">Ens</label> -->
+    </div>
+    <div>
+      <input type="radio" id="Mainnet" name="Mainnet" value="Mainnet" data-group='type-of-network'>
+      <label for="Mainnet">Mainnet</label>
+      <input type="radio" id="Goerli" name="Goerli" value="Goerli" data-group='type-of-network'>
+      <label for="Goerli">Goerli</label>
+      <input type="radio" id="Sepolia" name="Sepolia" value="Sepolia" data-group='type-of-network'>
+      <label for="Sepolia">Sepolia</label>
+      <input type="radio" id="Ropsten" name="Ropsten" value="Ropsten" data-group='type-of-network'>
+      <label for="Ropsten">Ropsten</label>
+     </div>
+     <button id="search">Search</button>
+
+  </div>
+</body>
+<script src="jquery.min.js"></script>
+<script src="web3.min.js"></script>
+<script src="script.js">
+</script>
+</html>
