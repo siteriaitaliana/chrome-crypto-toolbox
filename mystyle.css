@@ -25,7 +25,7 @@ button {margin-top: 10px;}
    color: #fd7e14;
  }
 
- #output {
+ #output, #signatureOutput {
   background-color: grey;
   margin-top: 10px;
   min-height: 40px;
@@ -33,6 +33,7 @@ button {margin-top: 10px;}
   border: 1px solid grey;
   box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
   padding: 5px;
+  overflow: auto;
  }
 
  button {
@@ -53,6 +54,8 @@ button {margin-top: 10px;}
  .cont {
    margin: 20px;
    padding: 10px;
+   overflow: -moz-scrollbars-vertical; 
+   overflow-y: scroll;
  }
 
  input {

@@ -18,18 +18,7 @@
 
     <h3 class="title">Etherscan search</h3>
     <input type="text" id="etherScanInput" name="etherScanInput" required minlength="1" maxlength="70" size="70" value="Search by Address / Txn Hash / Block / Token / Ens">
-    <div>
-      <!-- <input type="radio" id="Address" name="Address" value="Address" data-group='type-of-search'>
-      <label for="Address">Address</label>
-      <input type="radio" id="Tx" name="Tx" value="Tx" data-group='type-of-search'>
-      <label for="Tx">Tx</label>
-      <input type="radio" id="Block" name="Block" value="Block" data-group='type-of-search'>
-      <label for="Block">Block</label>
-      <input type="radio" id="Token" name="Token" value="Token" data-group='type-of-search'>
-      <label for="Token">Token</label>
-      <input type="radio" id="Ens" name="Ens" value="Ens" data-group='type-of-search'>
-      <label for="Ens">Ens</label> -->
-    </div>
+
     <div>
       <input type="radio" id="Mainnet" name="Mainnet" value="Mainnet" data-group='type-of-network'>
       <label for="Mainnet">Mainnet</label>
@@ -41,8 +30,16 @@
       <label for="Ropsten">Ropsten</label>
      </div>
      <button id="search">Search</button>
+   
+
+    <hr>
+    <h3 class="title">Decrypt 4-bytes function signatures</h3>
+    <input type="text" id="signatureInput" name="signatureInput" required minlength="10" maxlength="10" size="10" value="0x70a08231">
+    <button id="searchSignature">Search</button>
+    <p id="signatureOutput">Input value to decrypt and press search...</p>
 
   </div>
+
 </body>
 <script src="jquery.min.js"></script>
 <script src="web3.min.js"></script>

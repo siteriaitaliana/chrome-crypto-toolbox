@@ -66,3 +66,19 @@ document.getElementById('click_me').addEventListener("click", function(event) {
     document.getElementById('output').innerHTML = "Input either the decimal or the hex"
   }
 });
+
+
+document.getElementById('searchSignature').addEventListener("click", function() {
+  let input = document.getElementById('signatureInput').value
+  fetch(`https://www.4byte.directory/api/v1/signatures/?hex_signature=${input}`)
+  .then((response) => response.json())
+  .then((data) => {
+    let arr = []
+    data.results.map(o => {
+      arr.push(o.text_signature)
+    })
+    document.getElementById('signatureOutput').innerHTML = arr.join().split(',')
+    }
+  );
+});
+
